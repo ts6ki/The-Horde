@@ -391,6 +391,24 @@ function draw() {
            
         }
 
+        if(zombieGroup2.get(i).isTouching(player))
+        {
+          player.x = windowWidth/2 + 60
+          player.y = windowWidth/2 - (windowWidth/2 - 2220);
+
+          gameState = "failed";
+        }
+
+        if(zombieGroup2.get(i).isTouching(bulletsGroup))
+        {
+          zombieGroup2.get(i).destroy();
+          score = score + 10
+        } 
+
+         
+
+        
+
         if(waveCount === 1)
         {
             if(zombieGroup2.length <= 10)
@@ -443,26 +461,6 @@ function draw() {
 
               gameState = "cutscene3"
             }
-
-        if(zombieGroup2.get(i).isTouching(player))
-        {
-          player.x = windowWidth/2 + 60
-          player.y = windowWidth/2 - (windowWidth/2 - 2220);
-
-          gameState = "failed";
-        }
-
-        if(zombieGroup2.get(i).isTouching(bulletsGroup))
-        {
-          zombieGroup2.get(i).destroy();
-          score = score + 10
-        } 
-
-         
-
-        
-
-        
         }
       }
 
