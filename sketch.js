@@ -175,7 +175,7 @@ function draw() {
         zombieGroup.get(i).visible=false
     }
     back1.changeImage("Cutscene 1", cutscene_1)
-    back1.scale = 0.8;
+    back1.scale = 0.45;
 
     if(keyDown("space"))
     {
@@ -197,7 +197,7 @@ function draw() {
         zombieGroup.get(i).visible=false
     }
     back1.changeImage("Tutorial 1", tutorial_1)
-    back1.scale = 0.8;
+    back1.scale = 0.45;
 
     if(keyDown("x"))
     {
@@ -309,7 +309,7 @@ function draw() {
         zombieGroup.get(i).visible=false
     }
     back1.changeImage("Cutscene 2", cutscene_2)
-    back1.scale = 0.8;
+    back1.scale = 0.45;
 
     if(keyDown("space"))
     {
@@ -331,7 +331,7 @@ function draw() {
         zombieGroup.get(i).visible=false
     }
     back1.changeImage("Tutorial 2", tutorial_2)
-    back1.scale = 0.8;
+    back1.scale = 0.45;
 
     if(keyDown("x"))
     {
@@ -553,7 +553,7 @@ function draw() {
         zombieGroup.get(i).visible=false
     }
     back1.changeImage("Cutscene 3", cutscene_3)
-    back1.scale = 0.8;
+    back1.scale = 0.45;
 
   }
 
@@ -569,7 +569,7 @@ function draw() {
     }
 
     back1.changeImage("Level Failed", levelFailed)
-    back1.scale = 1.3;
+    back1.scale = 1;
         
     if(keyDown("r"))
     {
@@ -589,28 +589,28 @@ function draw() {
   {
     fill("white");
     textSize(20);
-    text("Press Space to continue", camera.position.x - 450, camera.position.y + 450);
+    text("Press Space to continue", camera.position.x, camera.position.y + 250);
   }
 
   if(gameState === "tutorial1")
   {
     fill("white");
     textSize(20);
-    text("Press X to continue", camera.position.x - 450, camera.position.y + 370);
+    text("Press X to continue", camera.position.x, camera.position.y + 250);
   }
 
   if(gameState === "cutscene2")
   {
     fill("white");
     textSize(20);
-    text("Press Space to continue", camera.position.x - 450, camera.position.y + 450);
+    text("Press Space to continue", camera.position.x, camera.position.y + 250);
   }
 
   if(gameState === "tutorial2")
   {
     fill("white");
     textSize(20);
-    text("Press X to continue", camera.position.x - 450, camera.position.y + 370);
+    text("Press X to continue", camera.position.x, camera.position.y + 250);
   }
 
   if(gameState === "level2")
@@ -625,7 +625,7 @@ function draw() {
   {
     fill("white");
     textSize(20);
-    text("Your Score is: " + score, camera.position.x, camera.position.y + 450);
+    text("Your Score is: " + score, camera.position.x, camera.position.y + 250);
   }
 
 
