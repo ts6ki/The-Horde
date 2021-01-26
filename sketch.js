@@ -581,9 +581,9 @@ function draw() {
   drawSprites();
   fill("white");
   textSize(20);
-  text("Score: " + score, camera.position.x - windowWidth/4, camera.position.y - windowHeight/3);
+  text("Score: " + score, camera.position.x - windowWidth/5, camera.position.y - windowHeight/6);
 
-  text("Level: " + gameState, camera.position.x - windowWidth/4, camera.position.y - windowHeight/3 + 25);
+  text("Level: " + gameState, camera.position.x - windowWidth/5, camera.position.y - windowHeight/6 + 25);
 
   if(gameState === "cutscene1")
   {
