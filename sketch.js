@@ -581,9 +581,9 @@ function draw() {
   drawSprites();
   fill("white");
   textSize(20);
-  text("Score: " + score, camera.position.x - 495, camera.position.y - windowHeight/6);
+  text("Score: " + score, camera.position.x - 495, camera.position.y - windowHeight/4);
 
-  text("Level: " + gameState, camera.position.x - 495, camera.position.y - windowHeight/6 + 25);
+  text("Level: " + gameState, camera.position.x - 495, camera.position.y - windowHeight/4 + 25);
 
   if(gameState === "cutscene1")
   {
@@ -617,8 +617,8 @@ function draw() {
   {
     fill("white");
     textSize(20);
-    text("Wave: " + waveCount, camera.position.x + 450, camera.position.y - 370);
-    text("Zombies Remaining: " + (zombieGroup2.length - 10), camera.position.x + 450, camera.position.y - 395)
+    text("Wave: " + waveCount, camera.position.x - 495, camera.position.y - windowHeight/4);
+    text("Zombies Remaining: " + (zombieGroup2.length - 10), camera.position.x - 495, camera.position.y - windowHeight/4 - 25)
   }
 
   if(gameState === "cutscene3")
